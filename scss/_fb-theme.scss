@@ -161,9 +161,14 @@ a, .link {
 
 //Generated Results
 .fizz{
-  @extend .button-blue;
+  background-color:$blue!important;
 }
-
+.buzz{
+  background-color:$s-orange!important;
+}
+.fizzbuzz{
+  background-color:$s-green!important;
+}
 // Forms
 
 .form-light {
