@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FizzBuzz</title>
-    <meta name="description" content="">
+    <meta name="description" content="FizzBuzz by Febby Gunawan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:400,400italic,600" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -26,27 +26,49 @@
 
     <header class="relative reverse min-y100 table center">
 
-    <div class="table-cell px1 py4 center object-scale transition-all">
-      <div class="inline-block mb1 dark bg-white rounded pulsate">
-        <div class="h0 bold square">FB</div>
-      </div>
-      <h1 class="h1 caps mb0">FIZZBUZZ</h1>
-      <p class="p caps mb2">an simple word game generated using JS by Febby Gunawan</p>
+        <div class="table-cell px1 py4 center object-scale transition-all">
+            <div class="inline-block mb1 dark bg-white rounded pulsate">
+                <div class="h0 bold square">FB</div>
+            </div>
+            <h1 class="h1 caps mb0">FIZZBUZZ</h1>
+            <p class="p caps mb2">an simple word game generated using JS by Febby Gunawan</p>
 
-      <div>
-        <span class="mr1">
-          <a class="p button button-big button-box-gray" href="#result">Start FizzBuzzin' !</a>
-        </span>
-      </div>
+            <div>
+                <span class="mr1">
+                    <a class="p button button-big button-box-gray" href="#result">Start FizzBuzzin' !</a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="start relative min-y100 table center">
+        <div class="table-cell px1 py4 center">
+            <h2 class="h2 caps mb0">What is Fizz Buzz?</h2>
+            <p class="p caps mb2">You count from 1 to a given number (let’s say 100). For each number if it’s not divisible by 3 or 5, you simply say the number. If it’s divisible by 3, instead of the number you say “fizz”. If it’s divisible by 5, you say “buzz”. And finally if it’s divisible by both 3 and 5, you say “fizz buzz”</p>
+
+            <div>
+                <p>Give it A try!</p>
+                <form action="#">
+                    <p>
+                        <input class="input" type="text" id="userinput" name="userguess" placeholder="Enter 0-100" required>
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Send" class="button button-big button-box-white">
+                    </p>
+                </form>
+                <section id="result" class="measure-wide wrap py-responsive ">
+                    <ul id="result-list" class="list-box transition-all">
+                    </ul>
+                </section>
+
+            </div>
+
+
+        </div>
     </div>
-  </header>
-  <main class="px-responsive py-responsive js-baseline js-outline">
-        <section id="result" class="measure-wide wrap py-responsive ">
-          <h2 class="rh" >Results</h2>
-          <ul class="list-box transition-all">
-          </ul>
-      </section>
-  </main>
+    <!--  <main class="px-responsive py-responsive js-baseline js-outline">
+       
+  </main> -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
